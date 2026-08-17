@@ -32,19 +32,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Enable Corepack
-        env:
-          COREPACK_ENABLE_DOWNLOAD_PROMPT: 0
-        run: corepack enable
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.5.0
 
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        env:
-          PNPM_HOME: /tmp
-          PNPM_STORE_DIR: /tmp/.pnpm-store
         run: pnpm install
 
       - name: Build with Next.js
