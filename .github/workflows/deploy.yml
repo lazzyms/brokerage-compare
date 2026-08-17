@@ -48,6 +48,9 @@ jobs:
           ls -la pnpm-lock.yaml
 
       - name: Install dependencies
+        env:
+          PNPM_HOME: /tmp
+          PNPM_STORE_DIR: /tmp/.pnpm-store
         run: pnpm install
 
       - name: Build with Next.js
