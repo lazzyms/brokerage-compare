@@ -42,9 +42,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Prune pnpm store
-        run: pnpm store prune
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --ignore-scripts
 
