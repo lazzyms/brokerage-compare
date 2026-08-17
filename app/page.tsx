@@ -89,9 +89,9 @@ function computeForBroker(key: BrokerKey, qty: number, buyPrice: number, sellPri
 
 export default function Page() {
   const [broker, setBroker] = useState<BrokerKey>("icici")
-  const [qty, setQty] = useState("18")
-  const [buyPrice, setBuyPrice] = useState("807")
-  const [sellPrice, setSellPrice] = useState("950")
+  const [qty, setQty] = useState("")
+  const [buyPrice, setBuyPrice] = useState("")
+  const [sellPrice, setSellPrice] = useState("")
 
   const nQty = Number.parseFloat(qty) || 0
   const nBuy = Number.parseFloat(buyPrice) || 0
