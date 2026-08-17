@@ -42,6 +42,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Debug pnpm
+        run: |
+          pnpm --version
+          ls -la pnpm-lock.yaml
+
       - name: Install dependencies
         run: pnpm install
 
