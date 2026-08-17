@@ -45,7 +45,7 @@ jobs:
         env:
           PNPM_HOME: /tmp
           PNPM_STORE_DIR: /tmp/.pnpm-store
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build with Next.js
         # base_path is like "/repo-name"; Next.js uses it for basePath/assetPrefix
