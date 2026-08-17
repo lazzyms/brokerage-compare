@@ -36,7 +36,7 @@ jobs:
         run: corepack enable
 
       - name: Prepare pnpm
-        run: corepack prepare pnpm@9.0.0 --activate
+        run: corepack prepare pnpm@11.5.0 --activate
 
       - name: Configure GitHub Pages
         id: pages
