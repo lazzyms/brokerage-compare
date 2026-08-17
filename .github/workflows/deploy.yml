@@ -32,10 +32,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 11.5.0
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Configure GitHub Pages
         id: pages
