@@ -42,6 +42,9 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
+        env:
+          PNPM_HOME: /tmp
+          PNPM_STORE_DIR: /tmp/.pnpm-store
         run: pnpm install --frozen-lockfile
 
       - name: Build with Next.js
