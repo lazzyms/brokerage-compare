@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Brokerage Compare – Equity Delivery P&L Calculator',
+  description: 'Compare brokerage, statutory charges, DP fees and STCG tax across ICICI Direct, Kotak Neo, Zerodha Kite and Groww for equity delivery trades.',
   generator: 'v0.app',
   icons: {
     icon: [
