@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Build with Next.js
         # base_path is like "/repo-name"; Next.js uses it for basePath/assetPrefix
