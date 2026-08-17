@@ -33,6 +33,8 @@ jobs:
           node-version: 20
 
       - name: Enable Corepack
+        env:
+          COREPACK_ENABLE_DOWNLOAD_PROMPT: 0
         run: corepack enable
 
       - name: Configure GitHub Pages
