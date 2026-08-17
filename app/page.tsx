@@ -296,6 +296,7 @@ export default function Page() {
                   ))}
                 </tbody>
               </table>
+              <span>Made with ❤️ for IPOs</span>
             </div>
           </div>
         </div>
